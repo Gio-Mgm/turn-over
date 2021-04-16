@@ -1,7 +1,11 @@
 from sklearn.metrics import recall_score, confusion_matrix, f1_score
 import pandas as pd
 
+
 def get_df_uniques(df):
+    """
+        return a dataframe with uniques values of each column
+    """
     attFeatures = []
     for col in df.columns:
         attFeatures.append(
@@ -12,6 +16,9 @@ def get_df_uniques(df):
 
 
 def show_results(test, pred):
+    """
+        output recall score and confusion_matrix values
+    """
     recall = recall_score(test, pred, pos_label="Yes")
 
     print(f"recall score (Yes) : {recall}")
