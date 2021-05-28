@@ -1,2 +1,6 @@
 data/
 archive/
+log/
+models/
+notebooks/log
+structured_data_classifier/

@@ -40,4 +40,3 @@ def show_results(test, pred):
     print("False Positives : ", cm[0][1])
     print("False Negatives : ", cm[1][0])
     print("True Positives  : ", cm[1][1])
-
